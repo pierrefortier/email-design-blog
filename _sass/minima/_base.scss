@@ -107,7 +107,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: $brand-color;
   }
 
   &:hover {
@@ -149,13 +149,19 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid #44475a;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: #44475a;
+  color: #f8f8f2;
 }
 
 code {
   padding: 1px 5px;
+
+  &::selection,
+  &::-moz-selection {
+    background: #282a36;
+  }
 }
 
 pre {

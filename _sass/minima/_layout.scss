@@ -253,3 +253,27 @@
     }
   }
 }
+
+/**
+ * Dark theme styles
+ */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: $dark-background-color;
+    color: $dark-text-color;
+  }
+  
+  a:hover {
+    color: $dark-text-color;
+  }
+
+  .site-title,
+  .page-link {
+    &,
+    &:visited {
+      color: $dark-text-color;
+    }
+  }
+
+}
